@@ -1,0 +1,19 @@
+{
+	"name": "express",
+	"version": "1.0.0",
+	"description": "a small route example for express framework",
+	"main": "app.js",
+	"scripts": {
+		"start": "node ./app.js",
+		"dev": "nodemon ./app.js"
+	},
+	"keywords": [
+		"nodejs",
+		"express"
+	],
+	"author": "cedric karungu",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2"
+	}
+}
