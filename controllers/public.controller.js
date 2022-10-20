@@ -1,5 +1,5 @@
 exports.getHomePage = (req, res) => {
-	res.render('index');
+	res.render('index', { name: 'cedric vice coach' });
 };
 
 exports.getContactPage = (req, res) => {
