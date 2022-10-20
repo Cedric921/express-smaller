@@ -1,17 +1,11 @@
 const app = require('express')();
-const path = require('path');
 
-app.get('/contact', (req, res) => {
-	res.sendFile(path.join(__dirname, 'views', 'contact.html'));
-});
+// routes
+const publicRoutes = require('./routes/public.route');
 
-app.get('/about', (req, res) => {
-	res.sendFile(path.join(__dirname, 'views', 'about.html'));
-});
+// main app
 
-app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, 'views', 'index.html'));
-});
+app.use(publicRoutes);
 
 const PORT = 5000;
 
